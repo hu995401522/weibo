@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/','StaticPagesController@home');
+Route::get('/help','StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +15,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
